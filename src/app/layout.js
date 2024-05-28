@@ -1,9 +1,9 @@
-import { Nunito } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
-const nunito = Nunito({ subsets: ["latin"] });
+const sourceSerif4 = Source_Serif_4({ subsets: ["latin"] });
 
-export function getStaticProps() { }
+export function getStaticProps() {}
 
 export const metadata = {
   title: "Booking",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>{children}</body>
+      <body className={sourceSerif4.className}>{children}</body>
     </html>
   );
 }
